@@ -15,7 +15,7 @@ def main (message):
 		encode = jsonpickle.encode(Updates)
 		formats = format(encode);
 		#print(encode);
-		command = subprocess.Popen(['php', 'center.php', format(encode)] ,shell=False)
+		# command = subprocess.Popen(['php', 'center.php', format(encode)] ,shell=False)
 		#command     = run_script(f"php center.php {formats}");
 	except Exception as Errors:
 		print('Error !!!',Errors);
