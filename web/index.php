@@ -13,7 +13,7 @@ include_once 'info.php';
 
 $myURL    = $_SERVER['SERVER_NAME'].$_SERVER['SCRIPT_NAME'];
 $url            = "https://api.telegram.org/bot{$bot_API_KEY}/setWebHook?url={$myURL}";
-
+echo('url: ' . $url);
 $response = file_get_contents($url);
 
 // Log webhook response
